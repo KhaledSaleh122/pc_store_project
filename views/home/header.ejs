@@ -1,0 +1,260 @@
+<header class="ec-header">
+    <!--Ec Header Top Start -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Header Top phone Start -->
+                <div class="col header-top-left">
+                    <div class="header-top-call">
+                        call us <%= storeInfo.phone_number %> 
+                    </div>
+                </div>
+                <!-- Header Top phone End -->
+                <!-- Header Top responsive Action -->
+                <div class="col header-top-res d-lg-none">
+                    <div class="ec-header-bottons">
+                        <!-- Header User Start -->
+                        <div class="ec-header-user dropdown">
+                            <button class="dropdown-toggle" data-bs-toggle="dropdown"><img
+                                    src="assets/images/icons/user.svg" class="svg_img header_svg" alt="" /></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a class="dropdown-item" href="/register">Register</a></li>
+                                <li><a class="dropdown-item" href="/checkout">Checkout</a></li>
+                                <li><a class="dropdown-item" href="/login">Login</a></li>
+                                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                            </ul>
+                        </div>
+                        <!-- Header User End -->
+                        <!-- Header Cart Start -->
+                        <a href="/wishlist" class="ec-header-btn ec-header-wishlist">
+                            <div class="header-icon"><img src="assets/images/icons/wishlist.svg"
+                                    class="svg_img header_svg" alt="" /></div>
+                        </a>
+                        <!-- Header Cart End -->
+                        <!-- Header Cart Start -->
+                        <a href="/cart" class="ec-header-btn ">
+                            <div class="header-icon"><img src="assets/images/icons/pro_cart.svg"
+                                    class="svg_img header_svg" alt="" /></div>
+                        </a>
+                        <!-- Header Cart End -->
+                        <!-- Header menu Start -->
+                        <a href="#ec-mobile-menu" class="ec-header-btn ec-side-toggle ec-d-l d-lg-none">
+                            <i class="ecicon eci-bars"></i>
+                        </a>
+                        <!-- Header menu End -->
+                    </div>
+                </div>
+                <!-- Header Top responsive Action -->
+            </div>
+        </div>
+    </div>
+    <!-- Ec Header Top  End -->
+    <!-- Ec Header Bottom  Start -->
+    <div class="ec-header-bottom d-none d-lg-block">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="header-bottom-flex">
+                    <!-- Ec Header Logo Start -->
+                    <div class="align-self-center ec-header-logo ">
+                        <div class="header-logo">
+                            <a href="/"><img src="upload/logo/logo.png" alt="Site Logo" /></a>
+                        </div>
+                    </div>
+                    <!-- Ec Header Logo End -->
+
+                    <!-- Ec Header Search Start -->
+                    <div class="align-self-center ec-header-search">
+                        <div class="header-search">
+                            <form class="ec-search-group-form" action="./shop" method="get">
+                                <input name="query" class="form-control" placeholder="I'm searching for..." type="text">
+                                <button class="search_submit" type="submit"><img src="assets/images/icons/search.svg"
+                                        class="svg_img search_svg" alt="" /></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Ec Header Search End -->
+
+                    <!-- Ec Header Button Start -->
+                    <div class="align-self-center ec-header-cart">
+                        <div class="ec-header-bottons">
+                            <!-- Header User Start -->
+                            <div class="ec-header-user dropdown">
+                                <button class="dropdown-toggle" data-bs-toggle="dropdown"><img
+                                        src="assets/images/icons/user.svg" class="svg_img header_svg" alt="" /><span
+                                        class="ec-btn-title">Account</span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-item" href="/register">Register</a></li>
+                                    <li><a class="dropdown-item" href="/login">Login</a></li>
+                                    <li><a class="dropdown-item" href="/checkout">Checkout</a></li>
+                                    <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                                </ul>
+                            </div>
+                            <!-- Header User End -->
+                            <!-- Header wishlist Start -->
+                            <a href="/wishlist" class="ec-header-btn ec-header-wishlist">
+                                <div class="header-icon"><img src="assets/images/icons/wishlist.svg"
+                                        class="svg_img header_svg" alt="" /></div><span
+                                <span class="ec-btn-title">wishlist</span>
+                            </a>
+                            <!-- Header wishlist End -->
+                            <!-- Header Cart Start -->
+                            <a href="/cart" class="ec-header-btn">
+                                <div class="header-icon"><img src="assets/images/icons/cart.svg"
+                                        class="svg_img header_svg" alt="" /></div>
+                                </span><span class="ec-btn-title">
+                                    Cart</span>
+                            </a>
+                            <!-- Header Cart End -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Ec Header Button End -->
+    <!-- Header responsive Bottom  Start -->
+    <div class="ec-header-bottom d-lg-none">
+        <div class="container position-relative">
+            <div class="row ">
+
+                <!-- Ec Header Logo Start -->
+                <div class="col">
+                    <div class="header-logo">
+                        <a href="/"><img src="upload/logo/logo.png" alt="Site Logo" /></a>
+                    </div>
+                </div>
+                <!-- Ec Header Logo End -->
+                <!-- Ec Header Search Start -->
+                <div class="col align-self-center ec-header-search">
+                    <div class="header-search">
+                        <form class="ec-search-group-form" action="./shop" method="get">
+                            <input name="query" class="form-control" placeholder="I'm searching for..." type="text">
+                            <button class="search_submit" type="submit"><img src="assets/images/icons/search.svg"
+                                    class="svg_img search_svg" alt="" /></button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Ec Header Search End -->
+            </div>
+        </div>
+    </div>
+    <!-- Header responsive Bottom  End -->
+    <!-- EC Main Menu Start -->
+    <div id="ec-main-menu-desk" class="sticky-nav">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-sm-2 ec-category-block">
+                    <div class="ec-category-menu">
+                        <div class="ec-category-toggle"><span class="ec-category-title">Categories</span><i
+                                class="ecicon eci-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="ec-category-content">
+                            <div id="ec-category-menu" class="ec-category-menu">
+                                <ul class="ec-category-wrapper">
+                                    <% categorys.forEach((v)=>{%>
+                                        <li><a title="" class="ec-cat-menu-link" href="#" style="text-transform: capitalize;"><%= v.name %></a></li>
+                                    <%});%>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 ec-main-menu-block align-self-center d-none d-lg-block">
+                    <div class="ec-main-menu">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/shop">Shop</a></li>
+                            <li class="dropdown"><a href="javascript:void(0)">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="./cart">Cart</a></li>
+                                    <li><a href="./wishlist">Wishlist</a></li>
+                                    <li><a href="/privacyandpolicy">Privacy & Policy</a></li>
+                                    <li><a href="/termsandconditions">Term & condition</a></li>
+                                    <li><a href="/login">Login</a></li>
+                                    <li><a href="/register">Register</a></li>
+                                    <li><a href="/checkout">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="javascript:void(0)">user</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/user/order_history">Order History</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/aboutus">About Us</a></li>
+                            <li><a href="/faq">FAQ</a></li>
+                            <li><a href="/contactus">Contact Us</a></li>
+                            <% if(admin){%>
+                                <li><a href="/dashboard">Dashboard</a></li>
+                            <%}%>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ec Main Menu End -->
+    <!-- Ekka Menu Start -->
+    <div class="ec-mobile-menu-overlay"></div>
+    <div id="ec-mobile-menu" class="ec-side-cart ec-mobile-menu">
+        <div class="ec-menu-title">
+            <span class="menu_title">My Menu</span>
+            <button class="ec-close">×</button>
+        </div>
+        <div class="ec-menu-inner">
+            <div class="ec-menu-content">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/shop">Shop</a></li>
+                    <li class="dropdown"><a href="javascript:void(0)">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="./cart">Cart</a></li>
+                            <li><a href="./wishlist">Wishlist</a></li>
+                            <li><a href="/privacyandpolicy">Privacy & Policy</a></li>
+                            <li><a href="/termsandconditions">Term & condition</a></li>
+                            <li><a href="/login">Login</a></li>
+                            <li><a href="/register">Register</a></li>
+                            <li><a href="/checkout">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="javascript:void(0)">user</a>
+                        <ul class="sub-menu">
+                            <li><a href="/user/order_history">Order History</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/aboutus">About Us</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/contactus">Contact Us</a></li>
+                    <% if(admin){%>
+                        <li><a href="/dashboard">Dashboard</a></li>
+                    <%}%>
+                </ul>
+            </div>
+            <div class="header-res-lan-curr">
+                <div class="header-top-lan-curr">
+                    <!-- Language Start -->
+                    <!-- Language End -->
+                    <!-- Currency Start -->
+                    <!-- Currency End -->
+                </div>
+                <!-- Social Start -->
+                <div class="header-res-social">
+                    <div class="header-top-social">
+                        <ul class="mb-0">
+                            <li class="list-inline-item"><a class="hdr-facebook" title="MoatazRabaya"  
+                                href="https://www.facebook.com/MoatazRabaya"><i class="ecicon eci-facebook"></i></a></li>
+                            <li class="list-inline-item"><a class="hdr-facebook" title="Ahmad Anini" 
+                                href="https://www.facebook.com/Ahmad.Anini.569"><i class="ecicon eci-facebook"></i></a></li>
+                            <li class="list-inline-item"><a class="hdr-facebook" title="Mazen Foqha" 
+                                    href="https://www.facebook.com/mazen.foqha"><i class="ecicon eci-facebook"></i></a></li>
+                            <li class="list-inline-item"><a class="hdr-instagram" title="Khaled Saleh" 
+                                href="https://www.instagram.com/khaledsaleh7900"><i class="ecicon eci-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Social End -->
+            </div>
+        </div>
+    </div>
+    <!-- Ekka Menu End -->
+</header>

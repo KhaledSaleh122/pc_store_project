@@ -1,0 +1,102 @@
+<div class="ec-left-sidebar ec-bg-sidebar">
+    <div id="sidebar" class="sidebar ec-sidebar-footer">
+
+        <div class="ec-brand">
+            <a href="../" title="<%=storeInfo.name%>">
+                <img class="" src="../upload/logo/logo.png" alt="" style="max-width: 150px;" />
+            </a>
+        </div>
+
+        <!-- begin sidebar scrollbar -->
+        <div class="ec-navigation" data-simplebar>
+            <!-- sidebar menu -->
+            <ul class="nav sidebar-inner" id="sidebar-menu">
+                <!-- Dashboard -->
+                <li class="">
+                    <a class="sidenav-item-link" href="/dashboard">
+                        <i class="mdi mdi-view-dashboard-outline"></i>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                    <hr>
+                </li>
+
+                <!-- Vendors -->
+                <!-- Category -->
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class="mdi mdi-dns-outline"></i>
+                        <span class="nav-text">Categories</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse">
+                        <ul class="sub-menu" id="categorys" data-parent="#sidebar-menu">
+                            <li class="">
+                                <a class="sidenav-item-link" href="../dashboard/main_category">
+                                    <span class="nav-text">Main Category</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Products -->
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class="mdi mdi-palette-advanced"></i>
+                        <span class="nav-text">Products</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse">
+                        <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+                            <li class="">
+                                <a class="sidenav-item-link" href="../dashboard/add_product">
+                                    <span class="nav-text">Add Product</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="sidenav-item-link" href="../dashboard/list_product">
+                                    <span class="nav-text">List Product</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="sidenav-item-link" href="../dashboard/edit_product">
+                                    <span class="nav-text">Edit Product</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--ORDER-->
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class="mdi mdi-palette-advanced"></i>
+                        <span class="nav-text">Order</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse">
+                        <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+                            <li class="">
+                                <a class="sidenav-item-link" href="../dashboard/orders">
+                                    <span class="nav-text">List Orders</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- Brands -->
+
+                <li>
+                    <a class="sidenav-item-link" href="../dashboard/control">
+                        <i class="mdi mdi-briefcase-edit"></i>
+                        <span class="nav-text">control</span>
+                    </a>
+                    <hr>
+                </li>
+
+                <!-- Authentication -->
+
+                <!-- Icons -->
+
+
+                <!-- Other Pages -->
+            </ul>
+        </div>
+    </div>
+</div>

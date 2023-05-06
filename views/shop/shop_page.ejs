@@ -1,0 +1,123 @@
+<style>
+    @media only screen and (max-width: 574px) {
+        .justify-content-xsm-center{
+            justify-content: center;
+        }
+    }
+</style>
+<section class="ec-page-content section-space-p">
+    <div class="container">
+        <div class="row">
+            <div class="ec-shop-rightside col-lg-12 col-md-12">
+                <!-- Shop Top Start -->
+                <div class="ec-pro-list-top d-flex">
+                    <div class="col-md-6 ec-grid-list">
+                        <div class="ec-gl-btn">
+                            <button class="btn sidebar-toggle-icon"><img src="assets/images/icons/filter.svg"
+                                    class="svg_img gl_svg" alt="filter" /></button>
+                            <button class="btn btn-grid-50 active"><img src="assets/images/icons/grid.svg"
+                                    class="svg_img gl_svg" alt="grid" /></button>
+                            <button class="btn btn-list-50"><img src="assets/images/icons/list.svg"
+                                    class="svg_img gl_svg" alt="list" /></button>
+                                    <style>
+                                    #btn_filter{width: 70px!important; color: black !important;}
+                                    #btn_filter:hover{color: white !important;}
+                                    </style>
+                            <button id="btn_filter" class="btn " onclick="$('#searchB').val('');$('#searchA').val('');">Filter</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ec-sort-select">
+                        <span class="sort-by">Sort by</span>
+                        <div class="ec-select-inner">
+                            <select name="ec-select" id="ec-select">
+                                <option selected disabled value="asc" data-col="default">Default</option>
+                                <option value="asc" data-col="name">Name, A to Z</option>
+                                <option value="desc" data-col="name">Name, Z to A</option>
+                                <option value="asc" data-col="price">Price, low to high</option>
+                                <option value="desc" data-col="price">Price, high to low</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shop Top End -->
+
+                <!-- Shop content Start -->
+                <div class="shop-pro-content">
+                    <div class="shop-pro-inner">
+                        <div class="row " id="items">
+                            <img id="loading" class="hide_loading" src="./images/loading.gif" style="width: 180px; height: 140px;opacity: 1 !important;">
+                        </div>
+                    </div>
+                    <!-- Ec Pagination Start -->
+                    <div class="ec-pro-pagination" id="info">
+                        
+                    </div>
+                    <ul id="pagination" class="pagination-md mt-3 justify-content-xsm-center"></ul>
+                    <!-- Ec Pagination End -->
+                </div>
+                <!--Shop content End -->
+            </div>
+            <!-- Sidebar Area Start -->
+            <div class="filter-sidebar-overlay"></div>
+            <div class="ec-shop-leftside filter-sidebar">
+                <div class="ec-sidebar-heading">
+                    <h1>Filter Products By</h1>
+                    <a class="filter-cls-btn" href="javascript:void(0)">×</a>
+                </div>
+                <div class="ec-sidebar-wrap">
+                    <!-- Sidebar Category Block -->
+                    <div class="ec-sidebar-block">
+                        <div class="ec-sb-title">
+                            <h3 class="ec-sidebar-title">Category</h3>
+                        </div>
+                        <div class="ec-sb-block-content">
+                            <ul>
+                                <% categorys.forEach((v)=>{%>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" 
+                                            <% if(category && category === v.name){ %>
+                                                checked 
+                                                <%}else if(!category){%>
+                                                    checked 
+                                               <% }%>
+                                            /> <a href="#"><%=v.name%></a><span
+                                                class="checked"></span>
+                                        </div>
+                                    </li>
+                                <%})%>
+                                <li>
+                                    <div class="ec-sidebar-block-item ec-more-toggle">
+                                        <span class="checked"></span><span id="ec-more-toggle">More
+                                            Categories</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Sidebar Size Block -->
+                    <!-- Sidebar Color item -->
+                    <!-- Sidebar Price Block -->
+                    <div class="ec-sidebar-block">
+                        <div class="ec-sb-title">
+                            <h3 class="ec-sidebar-title">Price</h3>
+                        </div>
+                        <div class="ec-sb-block-content es-price-slider">
+                            <div class="ec-price-filter">
+                                <div id="ec-sliderPrice" class="filter__slider-price" data-min="0" data-max="<%= maxPrice%>"
+                                    data-step="10"></div>
+                                <div class="ec-price-input">
+                                    <label class="filter__label"><input id="lprice" type="text" class="filter__input"></label>
+                                    <span class="ec-price-divider"></span>
+                                    <label class="filter__label"><input id="hprice" type="text" class="filter__input"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

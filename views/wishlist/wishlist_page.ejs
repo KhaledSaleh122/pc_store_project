@@ -1,0 +1,49 @@
+
+<section class="ec-page-content section-space-p">
+    <div class="container">
+        <div class="row">
+            <!-- Compare Content Start -->
+            <div class="ec-wish-rightside col-lg-12 col-md-12">
+                <!-- Compare content Start -->
+                <div class="ec-compare-content">
+                    <div class="ec-compare-inner">
+                        <div class="row margin-minus-b-30">
+                            <% items.forEach((v)=>{ %>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mb-6 pro-gl-content" data-id="<%= v.id%>">
+                                    <div class="ec-product-inner">
+                                        <div class="ec-pro-image-outer">
+                                            <div class="ec-pro-image">
+                                                <a href="product-left-sidebar.html" class="image">
+                                                    <img class="main-image"
+                                                        src="./upload/product/<%= v.id%>.<%= v.mimetype%>" alt="Product" width="435px" height="250px" />
+                                                    <img class="hover-image"
+                                                        src="./upload/product/<%= v.id%>.<%= v.mimetype%>" alt="Product"  width="435px" height="250px" />
+                                                </a>
+                                                <span class="ec-com-remove ec-remove-wish" data-id="<%= v.id%>"><a href="javascript:void(0)" >×</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="ec-pro-content">
+                                            <h5 class="ec-pro-title"><a href="/shop?query=<%= v.id%>"><%= v.name%></a></h5>
+                                            <div class="ec-pro-option">
+                                                <div>
+                                                    <span class="ec-price">
+                                                        <span class="new-price">$<%= v.price%></span>
+                                                    </span>
+                                                </div>
+                                                <span class="ec-price">
+                                                    <span class="category"><%= v.category%></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% }) %>
+                        </div>
+                    </div>
+                </div>
+                <!--compare content End -->
+            </div>
+            <!-- Compare Content end -->
+        </div>
+    </div>
+</section>

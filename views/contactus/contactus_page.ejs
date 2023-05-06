@@ -1,0 +1,54 @@
+<section class="ec-page-content section-space-p">
+    <div class="container">
+        <div class="row">
+            <div class="ec-common-wrapper">
+                <div class="ec-contact-leftside">
+                    <div class="ec-contact-container">
+                        <div class="ec-contact-form">
+                            <form action="mailto:<%= storeInfo.email%>" >
+                                <span class="ec-contact-wrap">
+                                    <label>Email*</label>
+                                    <input type="email" name="cc" placeholder="Enter your email address"
+                                        required />
+                                </span>
+                                <span class="ec-contact-wrap">
+                                    <label>Subject*</label>
+                                    <input type="text" name="subject" placeholder="Enter the subject"
+                                        required />
+                                </span>
+                                <span class="ec-contact-wrap">
+                                    <label>Comments/Questions*</label>
+                                    <textarea name="body"
+                                        placeholder="Please leave your comments here.."></textarea>
+                                </span>
+                                <span class="ec-contact-wrap ec-contact-btn">
+                                    <button class="btn btn-primary"  >Submit</button>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="ec-contact-rightside">
+                    <div class="ec_contact_map">
+                        <div class="ec_map_canvas">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26977.168767048563!2d35.04922816822313!3d32.307928527208695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d179d5d21d459%3A0x6bc7425a71c001a6!2z2LfZiNmE2YPYsdmF!5e0!3m2!1sar!2s!4v1682676925786!5m2!1sar!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <a href="https://sites.google.com/view/maps-api-v2/mapv2"></a>
+                        </div>
+                    </div>
+                    <div class="ec_contact_info">
+                        <h1 class="ec_contact_info_head">Contact us</h1>
+                        <ul class="align-items-center">
+                            <li class="ec-contact-item"><i class="ecicon eci-map-marker"
+                                    aria-hidden="true"></i><span>Address :</span><%= storeInfo.location%></li>
+                            <li class="ec-contact-item align-items-center"><i class="ecicon eci-phone"
+                                    aria-hidden="true"></i><span>Call Us :</span><%= storeInfo.phone_number%></li>
+                            <li class="ec-contact-item align-items-center"><i class="ecicon eci-envelope"
+                                    aria-hidden="true"></i><span>Email :</span><a
+                                    href="mailto:<%= storeInfo.email %>"><%= storeInfo.email %></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

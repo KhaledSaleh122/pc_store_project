@@ -1,0 +1,134 @@
+<div class="ec-content-wrapper">
+    <div class="content">
+        <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
+            <div>
+                <h1>View Order</h1>
+                <p class="breadcrumbs"><span><a href="../dashboard">Home</a></span>
+                    <span><i class="mdi mdi-chevron-right"></i></span>View Order</p>
+            </div>
+            <div>
+                <a href="../dashboard/orders" class="btn btn-primary"> View All
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form class="card card-default" method="post" action="../dashboard/change_status">
+                    <div class="card-header card-header-border-bottom">
+                        <h2>View Order</h2>
+                    </div>
+
+                    <div class="card-body" >
+                        <div class="row ec-vendor-uploads">
+                            <div class="col-lg-12 mt-3">
+                                <div class="ec-vendor-upload-detail">
+                                    <div class="row g-3">
+                                        <div class="col-md-6 mt-3">
+                                            <label for="inputEmail4" class="form-label">Order Id</label>
+                                            <input type="text" class="form-control slug-title" id="inputEmail4" name="id"
+                                            <% if(order){%>
+                                                value="<%= order._id%>"
+                                                readonly
+                                            <%}%>
+                                            >
+                                        </div>
+                                        <div class="col-md-6 mt-3">
+                                            <label class="form-label">Customer Id</label>
+                                            <input type="text" class="form-control" name="cust_id"
+                                            <% if(order){%>
+                                                value="<%= order.customer_id%>"
+                                                readonly
+                                            <%}%>
+                                            >
+                                        </div>
+                                        <div class="col-md-6 mt-3">
+                                            <label class="form-label">Order Cost</label>
+                                            <input type="text" class="form-control" name="cost"
+                                            <% if(order){%>
+                                                value="<%= order.total_cost%>"
+                                                readonly
+                                            <%}%>
+                                            >
+                                        </div>
+                                        <div class="col-md-6 mt-3">
+                                            <label class="form-label">Order Units</label>
+                                            <input type="number" class="form-control" id="price1" name="units"
+                                            <% if(order){%>
+                                                value="<%= order.total_items%>"
+                                                readonly
+                                            <%}%>
+                                            >
+                                        </div>
+                                        <div class="col-md-6 mt-3">
+                                            <label class="form-label">Status</label>
+                                            <input type="text" class="form-control" id="quantity1" name="status"
+                                            <% if(order){%>
+                                                value="<%= order.status%>"
+                                                readonly
+                                            <%}%>
+                                            >
+                                        </div>
+                                        <div class="col-md-6 mt-3">
+                                            <label class="form-label">Order Created</label>
+                                            <input type="date" class="form-control" id="price1" name="create_date"
+                                            <% if(order){%>
+                                                value="<%=new Date(order.createdDate).toISOString().split('T')[0];%>"
+                                                readonly
+                                            <%}%>
+                                            >
+                                        </div>
+                                        <div class="col-md-6 mt-3">
+                                            <label class="form-label">Order Updated</label>
+                                            <input type="date" class="form-control" id="quantity1" name="update_date"
+                                            <% if(order){%>
+                                                value="<%=new Date(order.updateDate).toISOString().split('T')[0];%>"
+                                                readonly
+                                            <%}%>
+                                            >
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <button type="submit" class="btn btn-primary" name="action" value="complete">Complete</button>
+                                            <button type="submit" class="btn btn-primary" name="action" value="cancel">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> <!-- End Content -->
+    <div class="content">
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-default">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="responsive-data-table" class="table"
+                                style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Prodduct ID</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <% items.forEach((v)=>{ %>
+                                    <tr>
+                                        <td><%= v.product_id %></td>
+                                        <td>$<%= v.price %></td>
+                                        <td><%= v.quantity %></td>
+                                    </tr>
+                                    <%})%>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

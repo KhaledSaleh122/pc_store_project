@@ -1,0 +1,115 @@
+<div class="ec-content-wrapper">
+    <div class="content">
+        <div class="breadcrumb-wrapper breadcrumb-wrapper-2 d-flex align-items-center justify-content-between">
+            <h1>Control</h1>
+            <p class="breadcrumbs"><span><a href="../dashboard">Home</a></span>
+                <span><i class="mdi mdi-chevron-right"></i></span>control
+            </p>
+        </div>
+        <div class="card card-default">
+            <div class="card-body">
+                <div class="row w-100">
+                    <div class="col-lg-6 col-xl-4 mb-24px">
+                        <h4 class="mb-3">Edit Logo</h4>
+                        <div class="ec-user-card card card-default p-4">
+                            <div
+                                class="media text-secondary align-items-end flex-column justify-content-between flex-wrap  align-content-start">
+                                <div class="w-100">
+                                    <img src="../upload/logo/logo.png" class="mx-3 mb-3" alt="Site Logo" height="100px" >
+                                </div>
+                                <form class="d-flex justify-content-between w-100" method="post" enctype="multipart/form-data">
+                                    <input type="hidden" name="type" value="logo">
+                                    <div class="">
+                                        <label for="image" class="btn btn-outline-primary mx-2">Pick Logo</label>
+                                        <input type="file" name="logo" id="image" accept=".png" class="d-none">
+                                    </div>
+                                    <div class="">
+                                        <button type="submit" class="btn btn-outline-success">Upload</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 mb-24px">
+                        <h4 class="mb-3">Edit site info</h4>
+                        <div class="ec-user-card card card-default p-4">
+                            <form class="d-flex flex-column justify-content-between w-100 form-control" method="post">
+                                <input type="hidden" name="type" value="siteInfo">
+                                <div >
+                                    <label  class="d-block">Phone Number</label>
+                                    <input type="text" name="phone"  value="<%= storeInfo.phone_number %>" class="w-100">
+                                </div>
+                                <div >
+                                    <label  class="d-block">Location</label>
+                                    <input type="text" name="location"  value="<%= storeInfo.location %>" class="w-100">
+                                </div>
+                                <div >
+                                    <label  class="d-block">Site Name</label>
+                                    <input type="text" name="name"  value="<%= storeInfo.name %>" class="w-100">
+                                </div>
+                                <div >
+                                    <label  class="d-block">Site Email</label>
+                                    <input type="text" name="email" value="<%= storeInfo.email%>" class="w-100">
+                                </div>
+                                <div class="mt-3">
+                                    <button type="submit" class="btn btn-outline-success" class="w-100">Edit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 mb-24px">
+                        <h4 class="mb-3">Edit Main Slider</h4>
+                        <div class="ec-user-card card card-default p-4">
+                            <form class="d-flex flex-column justify-content-between w-100 form-control" enctype="multipart/form-data" method="post">
+                                <input type="hidden" name="type" value="slide">
+                                <div class="mb-3">
+                                    <label for="slide_number">Choose Slide Number [1-3]</label>
+                                    <input type="number" name="slide_number" id="slide_number" class="" min="1" max="3"
+                                         value="1">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" name="subheader"  maxlength="300"
+                                        placeholder="The sub Head">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" name="header"  maxlength="300"
+                                        placeholder="The Head">
+                                </div>
+                                <div>
+                                    <textarea name="explain" placeholder="description" cols="30" rows="3" maxlength="250" class="w-100"></textarea>
+                                </div>
+                                <div class="mt-3">
+                                    <label for="slide" class="btn btn-outline-primary mx-2 mt-2" style="margin-bottom: 0 !important;">Pick Image 1920x697</label>
+                                    <input type="file" name="slide" id="slide" accept=".jpg,.png" class="d-none">
+                                    <button type="submit" class=" h-100 btn btn-outline-success mt-2" name="action" value="update">Update</button>
+                                    <button type="submit" class=" h-100 btn btn-outline-danger mx-2 mt-2" name="action" value="delete">delete</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 mb-24px">
+                        <h4 class="mb-3">Edit About Slider</h4>
+                        <div class="ec-user-card card card-default p-4">
+                            <form class="d-flex flex-column justify-content-between w-100 form-control" method="post" enctype="multipart/form-data">
+                                <input type="hidden" name="type" value="about">
+                                <div class="mb-3">
+                                    <input type="text" name="header"  maxlength="300"
+                                        placeholder="The Head">
+                                </div>
+                                <div>
+                                <textarea name="about" placeholder="description" cols="30" rows="3" maxlength="250" class="w-100"></textarea>
+                                </div>
+                                <div class="mt-3">
+                                    <label for="about" class="btn btn-outline-primary mx-2 mt-2" style="margin-bottom: 0 !important;">Pick Image 600x400</label>
+                                    <input type="file" name="about_img" id="about" accept=".jpg,.png" class="d-none">
+                                    <button type="submit" class=" h-100 btn btn-outline-success mt-2">Update</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- End Content -->
+</div>

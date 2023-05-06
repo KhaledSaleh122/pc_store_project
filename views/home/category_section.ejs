@@ -1,0 +1,29 @@
+<section class="section ec-category-section section-space-p">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 section-title-block">
+                <div class="section-title">
+                    <h2 class="ec-title">Browse By Categories</h2>
+                    <p class="sub-title">Check out our feature products.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="ec_cat_slider">
+                <% categorys.forEach((v)=>{ %>
+                    <div class="ec_cat_content">
+                        <div class="ec_cat_inner">
+                            <div class="ec-cat-image">
+                                <img src="upload/category/<%=v.name%>.<%=v.mimetype%>" alt="" height="200px" width="400px"/>
+                            </div>
+                            <div class="ec-cat-desc">
+                                <span class="ec-section-btn"><a href="./shop?category=<%=v.name%>"
+                                        class="btn-primary"><%= v.name %></a></span>
+                            </div>
+                        </div>
+                    </div>
+                <%})%>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,73 @@
+<section class="ec-page-content ec-vendor-uploads ec-user-account section-space-p">
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar Area Start -->
+            <div class="ec-shop-leftside ec-vendor-sidebar col-lg-3 col-md-12">
+                <div class="ec-sidebar-wrap">
+                    <!-- Sidebar Category Block -->
+                    <div class="ec-sidebar-block">
+                        <div class="ec-vendor-block">
+                            <div class="ec-vendor-block-items">
+                                <ul>
+                                    <li><a href="../user/order_history">Order History</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ec-shop-rightside col-lg-9 col-md-12">
+                <div class="ec-vendor-dashboard-card">
+                    <div class="ec-vendor-card-header">
+                        <h5>Your Order History</h5>
+                    </div>
+                    <div class="ec-vendor-card-body">
+                        <div class="ec-vendor-card-table">
+                            <table class="table ec-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Order ID</th>
+                                        <th scope="col">Units</th>
+                                        <th scope="col">Order Date</th>
+                                        <th scope="col">Order Cost</th>
+                                        <th scope="col">status</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% orders.forEach((v)=>{ %>
+                                        <tr>
+                                            <td><span>
+                                                    <%=v._id%>
+                                                </span></td>
+                                            <td><span>
+                                                    <%= v.total_items %>
+                                                </span></td>
+                                            <td><span>
+                                                    <%= new Date(v.createdDate).toISOString().split('T')[0];%>
+                                                </span></td>
+                                            <td><span>
+                                                    <%= v.total_cost%>
+                                                </span></td>
+                                            <td><span>
+                                                    <%= v.status%>
+                                                </span></td>
+                                            <td><span>
+                                                    <form class="" method="post" action="../user/order_history">
+                                                        <input type="hidden" name="id" value="<%= v._id%>">
+                                                        <button type="submit" class="" name="action"
+                                                            value="view">View</a>
+                                                    </form>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <% }) %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

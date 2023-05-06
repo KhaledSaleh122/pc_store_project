@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>Home</title>
+    <meta name="keywords" content="Hardware,shop,online shop,laptop,computer,cpu,ram,memory,mouse,keyboard" />
+    <meta name="description" content="Best Hardware Store">
+    <meta name="author" content="Khaled Saleh,Ahmad Anini,Motaz">
+
+    <!-- site Favicon -->
+    <link rel="icon" href="assets/images/favicon/favicon-10.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/images/favicon/favicon-10.png" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon/favicon-10.png" />
+
+    <!-- css Icon Font -->
+    <link rel="stylesheet" href="assets/css/vendor/ecicons.min.css" />
+
+    <!-- css All Plugins Files -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/countdownTimer.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/demo10.css" />
+    <!-- Background css -->
+    <style>
+        .next-slick-img{
+            background-image: none !important;
+        }
+        .next-slick-img .img-responsive{
+            display: none !important;
+        }
+        .prev-slick-img {
+            background-image: none !important;
+        }
+        .prev-slick-img .img-responsive{
+            display: none !important;
+        }
+    </style>
+    <link rel="stylesheet" href="css/custom_toast.css">
+</head>
+
+<body class="shop_page">
+    <div id="ec-overlay"><span class="loader_img"></span></div>
+
+    <!-- Header start  -->
+    <%- include('./home/header.ejs') %>
+    <!-- Header End  -->
+
+    <!-- Main Slider Start -->
+    <%- include('./home/main_slider.ejs') %>        
+    
+    <!-- About Start -->    
+    <%- include('./home/about.ejs') %>
+    <!-- About End -->
+    
+    <!--  category Section Start -->
+    <%- include('./home/category_section.ejs') %>
+    <!--category Section End -->
+    
+    <!-- Product tab Area Start -->
+    <%- include('./home/product_tab_area.ejs') %>
+    <!-- ec Product tab Area End -->
+    
+    <!--  services Section Start -->
+    <%- include('./home/services_section.ejs') %>
+    <!--services Section End -->
+
+    <!-- ec testimonial Start -->
+    <!-- ec testimonial end -->
+    
+    <%- include('./home/footer.ejs') %>
+
+    <!-- Modal -->
+    <%- include('./home/modal.ejs') %>
+    <!-- Modal end -->
+
+    <h1 id="error_message_head" style="display: none;"></h1>
+    <h1 id="error_message" style="display: none;"></h1>
+    <div id="toast-container"></div>
+
+    <%- include('./home/required_js.ejs') %>
+            
+</body>
+
+</html>

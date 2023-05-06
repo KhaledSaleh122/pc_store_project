@@ -1,0 +1,82 @@
+<section class="ec-page-content section-space-p">
+    <div class="container">
+        <div class="row">
+            <div class="ec-cart-leftside col-lg-8 col-md-12 ">
+                <!-- cart content Start -->
+                <div class="ec-cart-content">
+                    <div class="ec-cart-inner">
+                        <div class="row">
+                            <form action="#">
+                                <div class="table-content cart-table-content">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>Price</th>
+                                                <th style="text-align: center;">Quantity</th>
+                                                <th>Total</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="items">
+                                            <% items.forEach((v,i)=>{ %>
+                                                <tr data-id="<%= v.id %>" data-price="<%= v.price %>" data-index="<%=i%>">
+                                                    <td data-label="Product" class="ec-cart-pro-name"><a
+                                                            href="product-left-sidebar.html"><img class="ec-cart-pro-img mr-4"
+                                                                src="./upload/product/<%= v.id%>.<%= v.mimetype%>"
+                                                                alt="" /><%= v.name %></a></td>
+                                                    <td data-label="Price" class="ec-cart-pro-price"><span
+                                                            class="amount">$<%=v.price%></span></td>
+                                                    <td data-label="Quantity" class="ec-cart-pro-qty"
+                                                        style="text-align: center;">
+                                                        <div class="cart-qty-plus-minus">
+                                                            <input class="cart-plus-minus" type="text"
+                                                                name="cartqtybutton" value="<%=v.count%>" />
+                                                        </div>
+                                                    </td>
+                                                    <td data-label="Total" class="ec-cart-pro-subtotal">$<%= (v.count * v.price)%></td>
+                                                    <td data-label="Remove" class="ec-cart-pro-remove">
+                                                        <a href="#"><i class="ecicon eci-trash-o"></i></a>
+                                                    </td>
+                                                </tr>
+                                            <%})%>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="ec-cart-update-bottom">
+                                            <a href="./shop" class="mx-3 mb-3">Continue Shopping</a>
+                                            <a href="./checkout" class="btn btn-primary" style="text-decoration: none;">Check Out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--cart content End -->
+            </div>
+            <!-- Sidebar Area Start -->
+            <div class="ec-cart-rightside col-lg-4 col-md-12">
+                <div class="ec-sidebar-wrap">
+                    <!-- Sidebar Summary Block -->
+                    <div class="ec-sidebar-block">
+                        <div class="ec-sb-title">
+                            <h3 class="ec-sidebar-title">Summary</h3>
+                        </div>
+                        <div class="ec-cart-summary-bottom">
+                            <div class="ec-cart-summary">
+                                <div class="ec-cart-summary-total" style="border-top: none !important;">
+                                    <span class="text-left">Total Amount</span>
+                                    <span id="total" class="text-right">$0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sidebar Summary Block -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

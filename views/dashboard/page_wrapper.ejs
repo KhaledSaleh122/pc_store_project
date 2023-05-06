@@ -1,0 +1,31 @@
+<div class="ec-page-wrapper">
+
+    <!-- Header -->
+    <%- include('./page_wrapper_header.ejs') %>
+
+    <!-- CONTENT WRAPPER -->
+    <% if(page === "dashboard"){ %>
+        <%- include('./page_wrapper_contnet_dashboard.ejs') %>
+    <% } else if(page === "control") {%>
+        <%- include('./control/page_wrapper_content_control.ejs') %>
+    <% } else if(page === "main_category") {%>
+            <%- include('./main_category/page_wrapper_content_main_category.ejs') %>
+    <% } else if(page === "add_product") {%>
+            <%- include('./product/page_wrapper_content_add_product.ejs') %>
+    <% } else if(page === "list_product") {%>
+            <%- include('./product/page_wrapper_content_list_product.ejs') %>
+    <% } else if(page === "edit_product") {%>
+            <%- include('./product/page_wrapper_content_edit_product.ejs') %> 
+    <% } else if(page === "orders") {%>
+            <%- include('./orders/page_wrapper_content_list_orders.ejs') %>    
+    <% } else if(page === "view_order") {%>
+            <%- include('./orders/page_wrapper_content_view_order.ejs') %>               
+    <% } else { %>
+        <%- include('./page_wrapper_contnet_dashboard.ejs') %>
+    <% } %>
+    <!-- End Content Wrapper -->
+
+    <!-- Footer -->
+    <%- include('./page_wrapper_footer.ejs') %>
+
+</div>

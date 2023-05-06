@@ -1,0 +1,63 @@
+<div class="ec-content-wrapper">
+    <div class="content">
+        <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
+            <div>
+                <h1>Orders</h1>
+                <p class="breadcrumbs"><span><a href="../dashboard">Home</a></span>
+                    <span><i class="mdi mdi-chevron-right"></i></span>Orders</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-default">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="responsive-data-table" class="table"
+                                style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Units</th>
+                                        <th>Order Date</th>
+                                        <th>Order Cost</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <% orders.forEach((v)=>{ %>
+                                    <tr>
+                                        <td><%= v._id %></td>
+                                        <td><%= v.total_items %> Unit</td>
+                                        <td><%= new Date(v.createdDate).toISOString().split('T')[0];%></td>
+                                        <td><%= v.total_cost %></td>
+                                        <td><%= (v.status || 'hold') %></td>
+                                        <td>
+                                            <div class="btn-group mb-1">
+                                                <button type="button"
+                                                    class="btn btn-outline-success">Info</button>
+                                                <button type="button"
+                                                    class="btn btn-outline-success dropdown-toggle dropdown-toggle-split"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false" data-display="static">
+                                                    <span class="sr-only">Info</span>
+                                                </button>
+
+                                                <form class="dropdown-menu" method="post" action="../dashboard/view_order">
+                                                    <input type="hidden" name="id" value="<%= v._id%>">
+                                                    <button type="submit" class="dropdown-item" name="action" value="view">View</a>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <%})%>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Content -->
+</div>

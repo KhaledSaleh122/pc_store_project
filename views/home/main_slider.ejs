@@ -1,0 +1,38 @@
+<% main_slide.forEach((v)=>{%>
+    <style>
+        .ec-main-slider .slide-<%=v.index%>{
+            background-image: url('/upload/slide/slide<%=v.index%>.<%= v.mimetype%>');
+        }
+    </style>
+<%})%>
+<style>
+    .strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+</style>
+<div class="ec-main-slider section section-space-mb" >
+    <div class="ec-slider">
+        <% main_slide.forEach((v)=>{%>
+            <div class="ec-slide-item d-flex slide-<%=v.index%>">
+                <img src="" class="main_banner_arrow_img" alt="" />
+                <div class="container align-self-center">
+                    <div class="row" >
+                        <div class="col-xl-6 col-lg-7 col-md-7 col-sm-7 align-self-center" >
+                            <div class="ec-slide-content slider-animation">
+                                <h2 class="ec-slide-stitle strokeme"><%= v.subhead%></h2>
+                                <h1 class="ec-slide-title strokeme"><%= v.head%></h1>
+                                <h6 class="" style="color: white;text-shadow: 1px 0.5px 2px black;"><%=v.description%></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <%})%>
+    </div>
+</div>

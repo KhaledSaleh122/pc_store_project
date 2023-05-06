@@ -1,0 +1,88 @@
+<div class="ec-content-wrapper">
+    <div class="content">
+        <!-- Top Statistics -->
+        <div class="row">
+            <div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
+                <div class="card card-mini dash-card card-1">
+                    <div class="card-body">
+                        <h2 class="mb-1"><%= daily.signup %></h2>
+                        <p>Daily Signups</p>
+                        <span class="mdi mdi-account-arrow-left"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
+                <div class="card card-mini dash-card card-3">
+                    <div class="card-body">
+                        <h2 class="mb-1"><%= daily.orders %></h2>
+                        <p>Daily Order</p>
+                        <span class="mdi mdi-package-variant"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
+                <div class="card card-mini dash-card card-4">
+                    <div class="card-body">
+                        <h2 class="mb-1">$<%= daily.revenue %></h2>
+                        <p>Daily Revenue</p>
+                        <span class="mdi mdi-currency-usd"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 p-b-15">
+                <!-- Recent Order Table -->
+                <div class="card card-table-border-none card-default recent-orders" id="recent-orders">
+                    <div class="card-header justify-content-between">
+                        <h2>Orders Last Week</h2>
+                    </div>
+                    <div class="card-body pt-0 pb-5 mt-3">
+                        <table id="orderTable" class="table card-table table-responsive table-responsive-large"
+                            style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th class="d-none d-lg-table-cell">Units</th>
+                                    <th class="d-none d-lg-table-cell">Order Date</th>
+                                    <th class="d-none d-lg-table-cell">Order Cost</th>
+                                    <th class="d-none d-lg-table-cell">Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <%orders.forEach((v)=>{%>
+                                    <tr>
+                                        <td><%= v._id %></td>
+                                        <td class="d-none d-lg-table-cell"><%= v.total_items %> Unit</td>
+                                        <td class="d-none d-lg-table-cell"><%= new Date(v.createdDate).toISOString().split('T')[0];%></td>
+                                        <td class="d-none d-lg-table-cell"><%= v.total_cost %></td>
+                                        <td class="d-none d-lg-table-cell"><%= (v.status || 'hold') %></td>
+                                        <td class="text-right">
+                                            <div class="dropdown show d-inline-block widget-dropdown">
+                                                <a class="dropdown-toggle icon-burger-mini" href=""
+                                                    role="button" id="dropdown-recent-order1"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false" data-display="static"></a>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <form  method="post" action="../dashboard/view_order">
+                                                        <input type="hidden" name="id" value="<%= v._id%>">
+                                                        <button type="submit" class="dropdown-item" name="action" value="view">View</a>
+                                                    </form>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <%})%>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div> <!-- End Content -->
+</div>
+

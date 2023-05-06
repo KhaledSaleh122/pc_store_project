@@ -1,0 +1,32 @@
+#toast-container {
+    position: fixed !important;
+    bottom: 10px !important;
+    left: 10px !important;
+    z-index: 200000 !important;
+  }
+  
+  .toast {
+    display: none ;
+    background-color: #333 !important;
+    color: #fff !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    opacity: 1 !important;
+  }
+
+  .toast h2 {
+    margin-top: 0 !important;
+    margin-bottom: 5px !important;
+    font-size: 18px !important;
+    color: white;
+  }
+
+  .toast-Success {
+    background-color: #4CAF50 !important;
+    color: #fff !important;
+  }
+  
+  .toast-Error {
+    background-color: #f44336 !important;
+    color: #fff !important;
+  }

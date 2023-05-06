@@ -1,0 +1,84 @@
+<section class="section ec-product-tab section-space-p">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 section-title-block">
+                <div class="section-title">
+                    <h2 class="ec-title">Newest Products</h2>
+                    <p class="sub-title">Check out our newest products.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="tab-content">
+                    <!-- 1st Product tab start -->
+                    <div class="tab-pane fade show active" id="tab-pro-new-arrivals">
+                        <div class="row">
+                            <div class="ec-pro-tab-slider">
+                                <% products.forEach((v)=>{ %>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
+                                        <div class="ec-product-inner">
+                                            <div class="ec-pro-image-outer">
+                                                <div class="ec-pro-image">
+                                                    <a href="product-left-sidebar.html" class="image">
+                                                        <img class="main-image"
+                                                            src="./upload/product/<%= v._id%>.<%=v.mimetype%>" alt="Product" width="260" height="170" />
+                                                        <img class="hover-image"
+                                                            src="./upload/product/<%= v._id%>.<%=v.mimetype%>" alt="Product" width="260" height="170"  />
+                                                    </a>
+                                                    <%if(v.quantity === 0){%>
+                                                        <span class="flags">
+                                                            <span class="stock">out of stock</span>
+                                                        </span>
+                                                    <%}%>
+                                                    <div class="ec-pro-actions" data-id='<%=v._id%>' data-name='<%=v.name%>' 
+                                                    data-mimetype='<%=v.mimetype%>'  data-price='<%=v.price%>' data-category='<%=v.category%>'
+                                                    data-quantity="<%=v.quantity%>"
+                                                    >
+                                                        <button title="Add To Cart" class=" add-to-cart"><img
+                                                                src="assets/images/icons/cart.svg"
+                                                                class="svg_img pro_svg" alt="" /></button>
+                                                        <button href="#" class="ec-btn-group quickview"
+                                                             title="Quick view"
+                                                             data-link-action="quickview" title="Quick view"
+                                                             data-bs-toggle="modal"
+                                                             data-bs-target="#ec_quickview_modal"
+                                                            ><img
+                                                                src="assets/images/icons/quickview.svg" 
+                                                                class="svg_img pro_svg quickview_button" alt=""
+                                                                /></button>
+                                                        <button class="ec-btn-group wishlist" title="Wishlist"><img
+                                                                src="assets/images/icons/pro_wishlist.svg"
+                                                                class="svg_img pro_svg" alt="" /></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ec-pro-content" >
+                                                <h5 class="ec-pro-title"><a onclick="$($( $(this).parents('.ec-pro-content')).siblings()).find('.quickview').trigger('click')"
+                                                    data-link-action="quickview" title="Quick view"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#ec_quickview_modal"
+                                                    >
+                                                    <%=v.name%></a></h5>
+                                                <span class="ec-price">
+                                                    <span class="new-price">$<%=v.price%></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <%})%>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ec 1st Product tab end -->
+                    <!-- ec 2nd Product tab start -->
+                    
+                    <!-- ec 2nd Product tab end -->
+                    <!-- ec 3rd Product tab start -->
+                    <!-- ec 3rd Product tab end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

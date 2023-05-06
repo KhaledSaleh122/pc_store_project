@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Ekka - Admin Dashboard eCommerce HTML Template.">
+
+	<title>Admin Dashboard</title>
+
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+	<link href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css" rel="stylesheet" />
+
+	<!-- PLUGINS CSS STYLE -->
+	<link href="../assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+	<link href="../assets/plugins/simplebar/simplebar.css" rel="stylesheet" />
+	
+	<!-- Data Tables -->
+	<link href='../assets/plugins/data-tables/datatables.bootstrap5.min.css' rel='stylesheet'>
+	<link href='../assets/plugins/data-tables/responsive.datatables.min.css' rel='stylesheet'>
+
+	<!-- Ekka CSS -->
+	<link id="ekka-css" href="../assets/css/ekka.css" rel="stylesheet" />
+	<!-- Custom toast -->
+	<link rel="stylesheet" href="../css/custom_toast.css">
+	<!-- FAVICON -->
+	<link href="../assets/img/favicon.png" rel="shortcut icon" />
+
+</head>
+
+<body class="ec-header-fixed ec-sidebar-fixed ec-sidebar-light ec-header-light" id="body">
+
+	<!--  WRAPPER  -->
+    <%- include('./dashboard/wrapper.ejs') %>
+	<!-- End Wrapper -->
+	<!-- toast message -->
+	<%- include('./toast.ejs') %>
+	<!-- Common Javascript -->
+	<script src="../assets/plugins/jquery/jquery-3.5.1.min.js"></script>
+	<script src="../assets/js/bootstrap.bundle.min.js"></script>
+	<script src="../assets/plugins/tags-input/bootstrap-tagsinput.js"></script>
+	<script src="../assets/plugins/simplebar/simplebar.min.js"></script>
+	<script src="../assets/plugins/jquery-zoom/jquery.zoom.min.js"></script>
+	<script src="../assets/plugins/slick/slick.min.js"></script>
+
+	<!-- Chart -->
+	<script src="../assets/plugins/charts/Chart.min.js"></script>
+	<script src="../assets/js/chart.js"></script>
+
+	<!-- Google map chart -->
+	<script src="../assets/plugins/charts/google-map-loader.js"></script>
+	<script src="../assets/plugins/charts/google-map.js"></script>
+
+	<!-- Date Range Picker -->
+	<script src="../assets/plugins/daterangepicker/moment.min.js"></script>
+    <script src="../assets/plugins/daterangepicker/daterangepicker.js"></script>
+	<script src="../assets/js/date-range.js"></script>
+
+	<!-- Option Switcher -->
+	<script src="../assets/plugins/options-sidebar/optionswitcher.js"></script>
+
+	<!-- Data Tables -->
+	<script src='../assets/plugins/data-tables/jquery.datatables.min.js'></script>
+	<script src='../assets/plugins/data-tables/datatables.bootstrap5.min.js'></script>
+	<script src='../assets/plugins/data-tables/datatables.responsive.min.js'></script>
+
+	<!-- Ekka Custom -->
+	<script src="../assets/js/ekka.js"></script>
+	<!-- Custom toats  -->
+	<script src="../js/custom_toast.js"></script>
+	<script>
+		let table = new DataTable('#orderTable', {
+			// config options...
+		});
+	</script>
+</body>
+
+</html>
