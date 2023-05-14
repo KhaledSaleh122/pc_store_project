@@ -440,7 +440,7 @@ async function createANewCategory(req,res){
         name = name.toLowerCase();
         //Verify name is only letters
         const onlyLettersRegex = /^[a-zA-Z]+$/;
-        if(!onlyLettersRegex.test(name)){throw 'Name must only be letters!!'}
+        //if(!onlyLettersRegex.test(name)){throw 'Name must only be letters!!'}
         //Verify image mimetype only png or jpg
         const imagePngOrJpgRegex = /^image\/(png|jpg|jpeg)$/;
         if(!imagePngOrJpgRegex.test(category_img.mimetype)){throw 'Image must be png or jpg only'}
