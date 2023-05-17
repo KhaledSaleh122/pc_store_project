@@ -38,7 +38,6 @@ passport.deserializeUser(User.deserializeUser());
 
 //////////////////////////
 router.get('/register', async (req, res) => {
-    console.log('lsssss');
     const search = req.query.query || ''
     const storeInfo = await getStoreInfo();
     const categorys = await getCategorys();
@@ -83,7 +82,8 @@ router.post('/register',async (req,res)=>{
               }
             })
         });
-        res.render('login.ejs',{  categorys:categorys,search: '',storeInfo:storeInfo,head: 'Success',message:'You registerd successfully'});
+        res.redirect('/login')
+        //res.render('login.ejs',{  categorys:categorys,search: '',storeInfo:storeInfo,head: 'Success',message:'You registerd successfully'});
     }catch(err){
         const storeInfo = await getStoreInfo();
         const categorys = await getCategorys();
@@ -130,12 +130,14 @@ router.get('/logout', async (req, res) => {
                 resolve('done');
             });
         })
-        res.render('login.ejs', {  categorys:categorys,search: search,storeInfo:storeInfo,head: 'Success',message:'You successfully loged out'});
+        res.redirect('/login');
+        //res.render('login.ejs', {  categorys:categorys,search: search,storeInfo:storeInfo,head: 'Success',message:'You successfully loged out'});
     }catch(err){
         const search = req.query.query || ''
         const storeInfo = await getStoreInfo();
         const categorys = await getCategorys();
-        res.render('login.ejs', {  categorys:categorys,search: search,storeInfo:storeInfo,head: 'Error',message:'Error while logging out'});
+        res.redirect('/');
+        //res.render('login.ejs', {  categorys:categorys,search: search,storeInfo:storeInfo,head: 'Error',message:'Error while logging out'});
     }
 });
 
@@ -166,8 +168,8 @@ router.post('/login',async(req,res)=>{
         const search = req.query.query || ''
         const storeInfo = await getStoreInfo();
         const categorys = await getCategorys();
-        res.render('login.ejs', {  categorys:categorys,search: search,storeInfo:storeInfo,head: 'Error',message:err});
         console.log(err);
+        res.render('login.ejs', {  categorys:categorys,search: search,storeInfo:storeInfo,head: 'Error',message:err});
     }
 });
 
