@@ -1,0 +1,323 @@
+[{
+  "_id": {
+    "$oid": "64613689bf44c59d4fcc6721"
+  },
+  "name": "CASE LIAN-LI PC-011D DYNAMIC TG MID TOWER BLACK",
+  "category": "computer case",
+  "price": 790,
+  "quantity": 10,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:29:13.765Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:29:13.765Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6461390bbf44c59d4fcc67a8"
+  },
+  "name": "RAM CORSAIR VENGEANCE RGB PRO 3200 2X8 BLACK",
+  "category": "ram memory",
+  "price": 350,
+  "quantity": 2,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:39:55.171Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:39:55.171Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64613746bf44c59d4fcc675c"
+  },
+  "name": "MONITOR AOC C32G1 32” CURVED VA 144HZ",
+  "category": "monitors",
+  "price": 1380,
+  "quantity": 20,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:32:22.218Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:32:22.218Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6461392ebf44c59d4fcc67af"
+  },
+  "name": "PSU CORSAIR RM650 650W 80+ GOLD",
+  "category": "computer power supply",
+  "price": 450,
+  "quantity": 4,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:40:30.006Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:40:30.006Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6461365bbf44c59d4fcc671a"
+  },
+  "name": "CASE COOLERMASTER H500 ARGB TG MID TOWER GREY",
+  "category": "computer case",
+  "price": 490,
+  "quantity": 31,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:28:27.253Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:28:27.253Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6461383fbf44c59d4fcc6784"
+  },
+  "name": "COOLER FAN-CASE CORSAIR LL120 DUAL LIGHT RGB 3-FAN BLACK",
+  "category": "computer cooler",
+  "price": 355,
+  "quantity": 20,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:36:31.852Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:36:31.852Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646138b3bf44c59d4fcc6799"
+  },
+  "name": "CPU INTEL I5 12400F BOX",
+  "category": "computer cpu",
+  "price": 685,
+  "quantity": 33,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:38:27.356Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:38:27.356Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646138d6bf44c59d4fcc67a1"
+  },
+  "name": "CPU INTEL I7 10700K TRAY",
+  "category": "computer cpu",
+  "price": 1638,
+  "quantity": 2,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:39:02.929Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:39:02.929Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646137e8bf44c59d4fcc6776"
+  },
+  "name": "GPU ASUS DUAL GTX1660S-O6G-EVO",
+  "category": "graphic card",
+  "price": 1190,
+  "quantity": 20,
+  "mimetype": "jpeg",
+  "createdDate": {
+    "$date": "2023-05-14T19:35:04.267Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:35:04.267Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64613952bf44c59d4fcc67b6"
+  },
+  "name": "SSD KINGSTON A400 240GB 2.5” SATA3",
+  "category": "ssd for computers",
+  "price": 99,
+  "quantity": 10,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:41:06.311Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:41:06.311Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6450eabe5ee747f70253ca70"
+  },
+  "name": "i9 ",
+  "category": "cpu",
+  "price": 3000,
+  "quantity": 12,
+  "mimetype": "jpeg",
+  "createdDate": {
+    "$date": "2023-05-02T10:49:34.762Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-02T10:49:34.762Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64613888bf44c59d4fcc6792"
+  },
+  "name": "MB ASUS PRIME B450M-A GAMING AM4 AMD",
+  "category": "motherboards",
+  "price": 345,
+  "quantity": 33,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:37:44.628Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:37:44.628Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6461371abf44c59d4fcc6755"
+  },
+  "name": "MONITOR AOC 24G2U/BK 24” IPS 144HZ",
+  "category": "monitors",
+  "price": 800,
+  "quantity": 10,
+  "mimetype": "jpeg",
+  "createdDate": {
+    "$date": "2023-05-14T19:31:38.284Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:31:38.285Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646136c8bf44c59d4fcc6728"
+  },
+  "name": "CASE ANTEC NX800 ARGB TG MID TOWER BLACK",
+  "category": "computer case",
+  "price": 400,
+  "quantity": 309,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:30:16.772Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:30:16.772Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64613864bf44c59d4fcc678b"
+  },
+  "name": "MB ASUS TUF B450-PLUS GAMING AM4 AMD",
+  "category": "motherboards",
+  "price": 390,
+  "quantity": 22,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:37:08.231Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:37:08.231Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64613978bf44c59d4fcc67bd"
+  },
+  "name": "HDD SEAGATE BARRACUDA DM004 4TB 256MB SATA3",
+  "category": "computer harddisk",
+  "price": 385,
+  "quantity": 66,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:41:44.831Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:41:44.831Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6461378dbf44c59d4fcc6768"
+  },
+  "name": "LAPTOP ASUS EXPERTBOOK 13.3″ i5-1135G7 SSD512 RAM16 W10P",
+  "category": "laptop",
+  "price": 3500,
+  "quantity": 1,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:33:33.742Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:33:33.742Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6461380fbf44c59d4fcc677d"
+  },
+  "name": "GPU GIGABYTE GEFORCE RTX2060 OC-6G REV2.0",
+  "category": "graphic card",
+  "price": 1565,
+  "quantity": 33,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:35:43.081Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:35:43.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "646137b3bf44c59d4fcc676f"
+  },
+  "name": "LAPTOP ASUS TUF 15.6″ i7-12700H SSD1TB RAM16 W11 3060 GRAY",
+  "category": "laptop",
+  "price": 5600,
+  "quantity": 12,
+  "mimetype": "png",
+  "createdDate": {
+    "$date": "2023-05-14T19:34:11.457Z"
+  },
+  "modifiedDate": {
+    "$date": "2023-05-14T19:34:11.457Z"
+  },
+  "__v": 0
+}]

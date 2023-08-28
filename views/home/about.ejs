@@ -6,13 +6,15 @@
             </div>
             <div class="col-lg-6">
                 <div class="ec-about">
-                    <img src="upload/about/about.<%=about.mimetype%>" alt="about-image">
+                    
+                    
+                    <%=(about && about.mimetype?`<img src="upload/about/about.%{about.mimetype}" alt="about-image">`:'Add about me from control panel')%>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="ec-about-detail">
-                    <h4><%= about.head %></h4>
-                    <p><%= about.description %></p>
+                    <h4><%= (about && about.head?about.head:'')%></h4>
+                    <p><%= (about && about.description?about.description:'') %></p>
                 </div>
             </div>
         </div>

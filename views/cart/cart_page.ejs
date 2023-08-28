@@ -22,7 +22,7 @@
                                             <% items.forEach((v,i)=>{ %>
                                                 <tr data-id="<%= v.id %>" data-price="<%= v.price %>" data-index="<%=i%>">
                                                     <td data-label="Product" class="ec-cart-pro-name"><a
-                                                            href="product-left-sidebar.html"><img class="ec-cart-pro-img mr-4"
+                                                            href="/shop?query=<%= v.id%>"><img class="ec-cart-pro-img mr-4"
                                                                 src="./upload/product/<%= v.id%>.<%= v.mimetype%>"
                                                                 alt="" /><%= v.name %></a></td>
                                                     <td data-label="Price" class="ec-cart-pro-price"><span
